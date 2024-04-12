@@ -8,7 +8,6 @@ Para criar Layout foram utilizados as seguintes:
 - HTML5
 - CSS3
 - JavaScript
-- Slick Slider
 
 O projeto está disponível no Git ou Vercel
 
