@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>Desafio Maeztra</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <div id="header">
+                <div id="header-presentation">
+                    <span class="header-presentation-text">Acompanhe as melhores promoções disponíveis aqui na
+                        Maeztra.</span>
+                </div>
+                <div id="header-content">
+                    <div class="header-menu-nav">
+                        <span class="icon-menu"><img src="images/icons/icon-menu.svg" alt="Ícone Menu"></span>
+                    </div>
+                    <div id="header-logo" class="header-content-item">
+                        <img class="header-logo-normal" src="./images/logos/logo-maeztra-header.png" width="147px" height="18px" alt="Maeztra Logo">
+                        <img class="header-logo-p" src="./images/logos/logo-maeztra-header-p.png" width="110px" height="12px" alt="Maeztra Logo">
+                    </div>
+                    <div class="header-icon-search">
+                        <span class="icon-magnifier"><ion-icon name="search-outline"></ion-icon></span>
+                    </div>
+                    <div id="header-search-bar" class="header-content-item">
+                        <form action="#">
+                            <input type="search" placeholder="O Quê Você Busca?" id="header-search-input"><button
+                            type="submit" class="header-btn orange-button">Buscar</button>
+                        </form>
+                    </div>
+                    <div class="header-menu-user">
+                        <span class="icon-purse"><img src="images/icons/icon-purse.svg" alt="Ícone bolsa"></span>
+                    </div>
+                    <div class="header-user-area" class="header-content-item">
+                        <div class="header-user-area-conta">
+                            <span></span>
+                            <ul>
+                                <li><a href="#" target="_self"><span>
+                                            <ion-icon name="person-outline"></ion-icon> Minha Conta
+                                        </span></a></li>
+                                <li><a href="#" target="_self"><span>
+                                            <ion-icon name="heart-outline"></ion-icon> Minha Conta
+                                        </span></a></li>
+                                <li class="header-meu-carrinho"><a href="#" target="_self"><span>
+                                            <ion-icon name="bag-outline"></ion-icon> Meu Carrinho
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-content-mobile">
+                </div>
+            </div>
+        </header>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#" target="_self"><span>Novidades</span></a></li>
+                    <li><a href="#" target="_self"><span>Vestidos</span></a></li>
+                    <li><a href="#" target="_self"><span>Roupas</span></a></li>
+                    <li><a href="#" target="_self"><span>Sapatos</span></a></li>
+                    <li><a href="#" target="_self"><span>Ligerie</span></a></li>
+                    <li><a href="#" target="_self"><span>Acessórios</span></a></li>
+                    <li><a href="#" target="_self"><span>OUTLET</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="full-banner">
+            <div class="banner-content">
+                <div class="icon-prev">
+                    <button id="banner-prev-btn" class="unstyled-btn">
+
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/icons/icon-prev-black.svg">
+                            <img class="icon-prev--normal" src="./images/icons/icon-prev.svg" alt="Ícone Voltar">
+                        </picture>
+                    </button>
+                </div>
+                <div class="banner-info">
+                    <div class="banner-title">
+                        <h1 class="banner-title-h1">Promoções de Outono</h1>
+                    </div>
+                    <div class="banner-text">
+                        <span class="banner-span-text">
+                            Confira os melhores looks para combinar com você nesse Outono
+                        </span>
+                    </div>
+                    <div class="banner-button">
+                        <button class="orange-button"><span class="banner-span-button">Conferir</span></button>
+                    </div>
+                </div>
+                <div class="icon-next">
+                    <button id="banner-next-btn" class="unstyled-btn">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/icons/icon-next-black.svg">
+                            <img class="icon-next--normal" src="./images/icons/icon-next.svg" alt="Ícone Próximo">
+                        </picture>
+                    </button>
+                </div>
+                <div class="banner-nav-dot">
+                    <button class="unstyled-btn dot"><img src="images/elipse-cheia.svg" alt="Slide 1"></button>
+                    <button class="unstyled-btn dot"><img src="images/elipse-vazio.svg" alt="Slide 2"></button>
+                    <button class="unstyled-btn dot"><img src="images/elipse-vazio.svg" alt="Slide 3"></button>
+                    <button class="unstyled-btn dot"><img src="images/elipse-vazio.svg" alt="Slide 4"></button>
+                    <button class="unstyled-btn dot"><img src="images/elipse-vazio.svg" alt="Slide 5"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-content">
+
+            <section class="benefits">
+                <h2>Por que comprar na Maeztra?</h2>
+                <div class="benefits-gallery js-flickity"
+                    data-flickity-options='{ "cellAlign": "left", "contain": true, "draggable": true, "pageDots": false, "prevNextButtons": false}'>
+                    <div class="benefits-tipbar gallery-cell ">
+                        <img src="images/icons/icon-worldwide.svg" alt="Ícone planeta Terra">
+                        <div>
+                            <h3 class="benefits-tipbar-title">Produtos importados</h3>
+                            <span class="benefits-tipbar-text">Produto de Alta Qualidade</span>
+                        </div>
+                    </div>
+                    <div class="benefits-tipbar gallery-cell">
+                        <img src="images/icons/icon-warehouse.svg" alt="Ícone Garagem">
+                        <div>
+                            <h3 class="benefits-tipbar-title">Estoque no Brazil</h3>
+                            <p class="benefits-tipbar-text">Produtos mais perto de você!</p>
+                        </div>
+                    </div>
+                    <div class="benefits-tipbar gallery-cell">
+                        <img src="images/icons/icon-devolution.png" alt="Ícone troca de mercadoria">
+                        <div>
+                            <h3 class="benefits-tipbar-title">Trocas Garantidas</h3>
+                            <span class="benefits-tipbar-text">Trocas em até 48 horas, veja as regras</span>
+                        </div>
+                    </div>
+                    <div class="benefits-tipbar gallery-cell">
+                        <img src="images/icons/icon-discount.svg" alt="Ícone desconto">
+                        <div>
+                            <h3 class="benefits-tipbar-title">Ganhe 5% off</h3>
+                            <span class="benefits-tipbar-text">Pagando à vista no Cartão</span>
+                        </div>
+                    </div>
+                    <div class="benefits-tipbar gallery-cell">
+                        <img src="images/icons/icon-delivery.svg" alt="Ícone Caminhão">
+                        <div>
+                            <h3 class="benefits-tipbar-title">Frete Grátis</h3>
+                            <span class="benefits-tipbar-text">Em compras acima de R&dollar; 499,00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partner-brands">
+                <h2>Marcas Parceiras</h2>
+                <div class="partner-gallery js-flickity"
+                    data-flickity-options='{ "cellAlign": "left", "contain": true, "draggable": true, "pageDots": false, "prevNextButtons": false}'>
+                    <img class="partner-logo gallery-cell" src="images/logos/logo-comma.jpg" alt="Logo Comma">
+                    <img class="partner-logo gallery-cell" src="images/logos/logo-melissa.jpg" alt="Logo Melissa">
+                    <img class="partner-logo gallery-cell" src="images/logos/logo-forever-21.jpg" alt="Logo Forever 21">
+                    <img class="partner-logo gallery-cell" src="images/logos/logo-zara.jpg" alt="Logo Zara">
+                    <img class="partner-logo gallery-cell" src="images/logos/logo-ann-taylor.jpg" alt="Logo Ann Taylor">
+                </div>
+            </section>
+            <section id="vitrine">
+                <h2><span class="vitrine-h2">As Mais Pedidas</span></h2>
+                <div class="main-gallery js-flickity" data-flickity-options ='{ "cellAlign": "left", "contain": true, "draggable": true, "pageDots": false}'>
+                    <div id="product-1" class="product">
+                        <img src="images/look-1.jpg" alt="Conjunto camisa e saia">
+                        <form class="product-form" action="#">
+                            <div class="product-radio">
+                                <input type="radio" name="color-product-1" id="p1-DEAC71" value="DEAC71" checked />
+                                <label for="p1-DEAC71"><span class="product-color"
+                                        style="background-color: #DEAC71;"></span></label>
+                                <input type="radio" name="color-product-1" id="p1-D37164" value="D37164" />
+                                <label for="p1-D37164"><span class="product-color"
+                                        style="background-color: #D37164;"></span></label>
+                                <input type="radio" name="color-product-1" id="p1-6497D3" value="6497D3e" />
+                                <label for="p1-6497D3"><span class="product-color"
+                                        style="background-color: #6497D3;"></span></label>
+                                <input type="radio" name="color-product-1" id="p1-3C3B79" value="3C3B79" />
+                                <label for="p1-3C3B79"><span class="product-color"
+                                        style="background-color: #3C3B79;"></span></label>
+                            </div>
+                            <p><span class="product-price">R&dollar; 500,00</span></p>
+                            <p><span class="product-name">Faux Suede Mini Skirt</span></p>
+                            <div class="product-description">
+                                <p><span>A faux suede mini skirt featuring exposed button-front closures and panel
+                                        seam construction.</span></p>
+                            </div>
+                            <button type="submit" class="orange-button product-btn"><span>Adicionar</span></button>
+                        </form>
+                    </div>
+                    <div id="product-2" class="product">
+                        <img src="images/look-2.jpg" alt="Conjunto camisa e saia">
+                        <form class="product-form" action="#">
+                            <div class="product-radio">
+                                <input type="radio" name="color-product-2" id="p2-1C1A19" value="1C1A19" checked />
+                                <label for="p2-1C1A19"><span class="product-color"
+                                        style="background-color: #1C1A19;"></span></label>
+                                <input type="radio" name="color-product-2" id="p2-D84E4B" value="D84E4B" />
+                                <label for="p2-D84E4B"><span class="product-color"
+                                        style="background-color: #D84E4B;"></span></label>
+                                <input type="radio" name="color-product-2" id="p2-CFC9B0" value="CFC9B0" />
+                                <label for="p2-CFC9B0"><span class="product-color"
+                                        style="background-color: #CFC9B0;"></span></label>
+                                <input type="radio" name="color-product-2" id="p2-EAE9E5" value="EAE9E5" />
+                                <label for="p2-EAE9E5"><span class="product-color"
+                                        style="background-color: #EAE9E5;"></span></label>
+                            </div>
+                            <p><span class="product-price">R&dollar; 320,00</span></p>
+                            <p><span class="product-name">Ruched Rose Print Mini Skirtt</span></p>
+                            <div class="product-description">
+                                <p><span>A satin mini skirt featuring an allover floral print, ruched side with
+                                        self-tie closure, concealed back zipper, and a flounce hem.</span></p>
+                            </div>
+                            <button type="submit" class="orange-button product-btn"><span>Adicionar</span></button>
+                        </form>
+                    </div>
+                    <div id="product-3" class="product">
+                        <img src="images/look-1.jpg" alt="Conjunto camisa e saia">
+                        <form class="product-form" action="#">
+                            <div class="product-radio">
+                                <input type="radio" name="color-product-3" id="p3-DEAC71" value="DEAC71" checked />
+                                <label for="p3-DEAC71"><span class="product-color"
+                                        style="background-color: #DEAC71;"></span></label>
+                                <input type="radio" name="color-product-3" id="p3-D37164" value="D37164" />
+                                <label for="p3-D37164"><span class="product-color"
+                                        style="background-color: #D37164;"></span></label>
+                                <input type="radio" name="color-product-3" id="p3-6497D3" value="6497D3e" />
+                                <label for="p3-6497D3"><span class="product-color"
+                                        style="background-color: #6497D3;"></span></label>
+                                <input type="radio" name="color-product-3" id="p3-3C3B79" value="3C3B79" />
+                                <label for="p3-3C3B79"><span class="product-color"
+                                        style="background-color: #3C3B79;"></span></label>
+                            </div>
+                            <p><span class="product-price">R&dollar; 500,00</span></p>
+                            <p><span class="product-name">Faux Suede Mini Skirt</span></p>
+                            <div class="product-description">
+                                <p><span>A faux suede mini skirt featuring exposed button-front closures and panel
+                                        seam construction.</span></p>
+                            </div>
+                            <button type="submit" class="orange-button product-btn"><span>Adicionar</span></button>
+                        </form>
+                    </div>
+                    <div id="product-4" class="product">
+                        <img src="images/look-2.jpg" alt="Conjunto camisa e saia">
+                        <form class="product-form" action="#">
+                            <div class="product-radio">
+                                <input type="radio" name="color-product-4" id="p4-1C1A19" value="1C1A19" checked />
+                                <label for="p4-1C1A19"><span class="product-color"
+                                        style="background-color: #1C1A19;"></span></label>
+                                <input type="radio" name="color-product-4" id="p4-D37164" value="D37164" />
+                                <label for="p4-D37164"><span class="product-color"
+                                        style="background-color: #D37164;"></span></label>
+                                <input type="radio" name="color-product-4" id="p4-CFC9B0" value="CFC9B0" />
+                                <label for="p4-CFC9B0"><span class="product-color"
+                                        style="background-color: #CFC9B0;"></span></label>
+                                <input type="radio" name="color-product-4" id="p4-EAE9E5" value="EAE9E5" />
+                                <label for="p4-EAE9E5"><span class="product-color"
+                                        style="background-color: #EAE9E5;"></span></label>
+                            </div>
+                            <p><span class="product-price">R&dollar; 320,00</span></p>
+                            <p><span class="product-name">Ruched Rose Print Mini Skirt</span></p>
+                            <div class="product-description">
+                                <p><span>A satin mini skirt featuring an allover floral print, ruched side with
+                                        self-tie closure, concealed back zipper, and a flounce hem.</span></p>
+                            </div>
+                            <button type="submit" class="orange-button product-btn"><span>Adicionar</span></button>
+                        </form>
+                    </div>
+                    <div id="product-5" class="product">
+                        <img src="images/look-1.jpg" alt="Conjunto camisa e saia">
+                        <form class="product-form" action="#">
+                            <div class="product-radio">
+                                <input type="radio" name="color-product-5" id="p5-DEAC71" value="DEAC71" checked />
+                                <label for="p5-DEAC71"><span class="product-color"
+                                        style="background-color: #DEAC71;"></span></label>
+                                <input type="radio" name="color-product-5" id="p5-D37164" value="D37164" />
+                                <label for="p5-D37164"><span class="product-color"
+                                        style="background-color: #D37164;"></span></label>
+                                <input type="radio" name="color-product-5" id="p5-6497D3" value="6497D3e" />
+                                <label for="p5-6497D3"><span class="product-color"
+                                        style="background-color: #6497D3;"></span></label>
+                                <input type="radio" name="color-product-5" id="p5-3C3B79" value="3C3B79" />
+                                <label for="p5-3C3B79"><span class="product-color"
+                                        style="background-color: #3C3B79;"></span></label>
+                            </div>
+                            <p><span class="product-price">R&dollar; 500,00</span></p>
+                            <p><span class="product-name">Faux Suede Mini Skirt</span></p>
+                            <div class="product-description">
+                                <p><span>A faux suede mini skirt featuring exposed button-front closures and panel
+                                        seam construction.</span></p>
+                            </div>
+                            <button type="submit" class="orange-button product-btn"><span>Adicionar</span></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="banner-2">
+                <div id="banner-2-text">
+                    <div class="banner-2-h2 banner-2-content">
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                    <div class="banner-2-p banner-2-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem ea sunt, dolorum
+                            reprehenderit beatae. Saepe fugit necessitatibus, vel asperiores placeat consequatur
+                            obcaecati nostrum, dolore est iste velit voluptatem ducimus? Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Tempora inventore eaque quos illum.
+                        </p>
+                    </div>
+                </div>
+                <div id="banner-2-img" class="banner-2-content">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/nova-colecao-p.jpg">
+                        <img src="./images/nova-colecao.jpg" alt="">
+                    </picture>
+                </div>
+            </section>
+        </div>
+        <section id="newsletter">
+            <div id="newsletter-content">
+                <div id="newsletter-span" class="newsletter-content-div">
+                    <span>Receba Nossa Newsletter</span>
+                </div>
+                <div id="newsletter-form" class="newsletter-content-div">
+                    <form action="#">
+                        <input type="email" name="#" placeholder="Digite seu e-mail"><button type="submit"
+                            class="orange-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer">
+                <div class="footer-nav-wrapper">
+                    <div id="footer-nav">
+                        <div id="footer-informacoes" class="footer-nav">
+                            <div class="footer-nav-title">
+                                <span class="footer-nav-head-span">Informações</span>
+                                <span class="footer-nav-head-span-show footer-show-informacoes">+</span>
+                            </div>
+                            <div id="footer-informacoes-ul" class="footer-ul">
+                                <ul>
+                                    <li><a href="#" target="_self"><span>Quem Somos</span></a></li>
+                                    <li><a href="#" target="_self"><span>Prazo de Envio</span></a></li>
+                                    <li><a href="#" target="_self"><span>Trocas e Devoluções</span></a></li>
+                                    <li><a href="#" target="_self"><span></span>Promoções e Cupons</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="footer-conta" class="footer-nav">
+                            <div class="footer-nav-title">
+                                <span class="footer-nav-head-span">Minha Conta</span>
+                                <span class="footer-nav-head-span-show footer-show-conta">+</span>
+                            </div>
+                            <div id="footer-conta-ul" class="footer-ul">
+                                <ul>
+                                    <li><a href="#" target="_self"><span>Minha Conta</span></a></li>
+                                    <li><a href="#" target="_self"><span>Meus Pedidos</span></a></li>
+                                    <li><a href="#" target="_self"><span>Cadastra-se</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="footer-endereco" class="footer-nav">
+                            <div class="footer-nav-title">
+                                <span class="footer-nav-head-span">Onde nos Encontrar</span>
+                                <span class="footer-nav-head-span-show footer-show-endereco">+</span>
+                            </div>
+                            <div id="footer-endereco-ul" class="footer-ul">
+                                <ul>
+                                    <li><a href="#" target="_self"><span>Lojas</span></a></li>
+                                    <li><a href="#" target="_self"><span>Endereço</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-info">
+                    <div class="footer-info">
+                        <div class="footer-info-content">
+                            <a href="#" target="_blank"><img src="images/logos/logo-facebook.svg"
+                                    alt="Logo Facebook"></a>
+                            <a href="#" target="_blank"><img src="images/logos/logo-linkedin.svg"
+                                    alt="Linkedin Logo"></a>
+                            <a href="#" target="_blank"><img src="images/logos/logo-instagram.svg"
+                                    alt="Logo Instagram"></a>
+                            <a href="#" target="_blank"><img src="images/logos/logo-youtube.svg "
+                                    alt="Logo Youtube"></a>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info-content">
+                            <img src="images/logos/logo-visa.svg" alt="Logo Cartão Visa">
+                            <img src="images/logos/logo-mastercard.svg" alt="Logo Cartão Mastercard">
+                            <img src="images/logos/logo-visa.svg" alt="Logo Cartão Visa">
+                            <img src="images/logos/logo-mastercard.svg" alt="Logo Cartão Mastercard">
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info-content footer-info-empresas">
+                            <div>
+                                <div class="footer-empresas-span">
+                                    <span>Powered by</span>
+                                </div>
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <picture>
+                                            <source media="(max-width: 767px)" srcset="images/logos/logo-vtex-footer.png">
+                                            <img class="footer-logo-vtex-normal" src="images/logos/logo-vtex.png" alt="Logo Vtex">
+                                        </picture>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="footer-empresas-span">
+                                    <span>Developed by</span>
+                                </div>
+                                <div>
+                                    <a href="#" targer="_blank">
+                                        <picture>
+                                            <source media="(max-width: 767px)" srcset="images/logos/logo-maeztra-footer-p.png">
+                                            <img class="footer-logo-maeztra-normal" src="images/logos/logo-maeztra-footer.png" alt="Logo Maeztra">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close">
+                <button id="modal-close-btn">FECHAR</button>
+            </div>
+            <div class="modal-image">
+                <img src="images/modal-image.jpg" height="100%" alt="Homem amarrando o cadarço.">
+            </div>
+            <div class="modal-info">
+                <div class="modal-text-1">
+                    <div>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div><span>BEM VINDO À MAEZTRA</span></div>
+                </div>
+                <div class="modal-text-2">
+                    <div>
+                        <span id="modal-text-2-span-1">Receba em Primeira mão</span>
+                    </div>
+                    <div>
+                        <span id="modal-text-2-span-2">desconto e ofertas exclusivas</span>
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form action="#">
+                        <div class="modal-search">
+                            <input type="search" name="#" placeholder="Digite seu e-mail">
+                        </div>
+                        <div>
+                            <button type="submit" class="modal-btn">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/header-nav.js"></script>
+    <script src="./script/banner.js"></script>
+    <script src="./script/footer-nav.js"></script>
+    <script src="./script/modal-js.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

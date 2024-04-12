@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+#header {
+    width: 100%;
+    margin: auto;
+}
+
+
+#header-presentation {
+    display: block;
+    text-align: center;
+    background-color: #353535;
+    height: 24px;
+    color: #efefef;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    margin: auto;
+    background-color: #FFFFFF;
+    }
+
+#header-search-bar {
+    display: flex;
+    width: 40%;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+#header-search-bar form {
+    width: 100%;
+}
+
+#header-search-input {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: calc(100% - 120px);
+    background-color: #efefef;
+    font-size: 14px;
+    padding-left: 15px;    
+}
+
+.header-btn {
+    font-size: 14px;
+    border-radius: 10px;
+    width: 119px;
+    height: 40px;
+}
+
+.header-user-area {
+    height: 50px;
+}
+
+.header-user-area-conta ul li {
+    display: inline-block;
+    height: 50px;
+    font-size: 20px;
+    margin: 0px 7px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-user-area-conta span {
+    color: #353535;
+    font-size: 16px;
+}
+
+.header-user-area-conta span:hover {
+    color: #FAA500;
+}
+
+.header-meu-carrinho {
+    align-items: center;
+    border: 2px  solid #FAA500;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+.header-logo-normal {
+    display: block;
+}
+.header-logo-p {
+    display: none;
+}
+.header-icon-search {
+    display: none;
+}
+.header-menu-nav {
+    display: none;
+}
+.header-menu-user {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header-menu-nav {
+        display: block;
+    }
+
+    .header-menu-nav img {
+        margin-left: 20px;
+        width: 24px;
+        height: 50px;
+    }
+
+    .header-menu-user {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-left: calc(100% - 50px);
+    }
+
+    #header-content {
+        justify-content: unset;
+        height: 88px;
+        left: 0px;
+        top: 24px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header-presentation-text {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .header-user-area {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        margin-left: calc(100% - 170px);
+        margin-right: 20px;
+        margin-top: 225px;
+        z-index: 100;
+        display: none;
+    }
+
+    .header-user-area-conta ul li {
+        width: 150px;
+        padding-top: 9px;
+        padding-left: 20px;
+        border-bottom: 1px solid rgba(53,53,53, 0.2);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .header-meu-carrinho {
+        border: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    #header-search-bar {
+        display: block;
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    #header-search-bar * {
+        height: 30px;
+    }
+
+    .header-btn {
+        width: 90px;
+    }
+
+    #header-search-input {
+        width: calc(100% - 90px);
+    }
+
+    #header-logo {
+        width: 110px;
+        height: 11.86px;
+        margin-left: 20px;
+    }
+
+    .header-logo-normal {
+        display: none;
+    }
+    .header-logo-p {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #header-search-bar {
+        position: absolute;
+        display: none;
+        width: 60%;
+        margin-left: 20px;
+        z-index: 100;
+    }
+
+
+    .header-btn {
+        width: 60px;
+    }
+
+    #header-search-input {
+        width: calc(100% - 60px);
+    }
+
+    .header-icon-search {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        margin-right: 70px;
+    }
+
+    .header-icon-search ion-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+}
