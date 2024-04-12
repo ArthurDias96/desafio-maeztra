@@ -1,1 +1,14 @@
-@import "./css/header/header.css";
+
+@import "css/header/banner/banner-2.css";
+@import "css/header/banner/banner.css";
+@import "css/header/card/benefit.css";
+@import "css/header/card/brands.css";
+@import "css/header/card/modal.css";
+@import "css/header/card/newsletter.css";
+@import "css/header/card/vitrine.css";
+@import "css/header/footer.css";
+@import "css/header/geral.css";
+@import "css/header/menu.css";
+@import "css/header/header/header.css";
+@import "css/mobile/header-mobile.css";
+

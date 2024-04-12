@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+#partner-brands {
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-bottom: 40px;
+}
+
+#partner-brands h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 49px;
+    text-align: center;
+    color: #353535;
+}
+
+.partner-logo {
+    margin-left: 20px;
+}
+
+.partner-logo:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #partner-brands {
+        margin: 0;
+    }
+
+    .partner-gallery {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .partner-gallery img {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+}

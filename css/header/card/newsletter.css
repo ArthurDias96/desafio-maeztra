@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#newsletter {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #FAFAFA;
+    border-top: 2px solid #EFEFEF;
+    border-bottom: 2px solid #EFEFEF;
+}
+
+
+#newsletter-content {
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    margin-left: calc(50%);
+    transform: translateX(-50%);
+}
+
+.newsletter-content-div {
+    margin: auto;
+}
+
+#newsletter-span {
+    font-size: 24px;
+    height: 40px;
+    width: 307px;
+    margin-left: 30px;
+}
+
+#newsletter-span span {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#newsletter-form {
+    padding: 0px;
+    width: 630px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+#newsletter-form input {
+    margin-top: 0px;
+    width: calc(100% - 132px);
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #353535;
+    border-right: none;
+    font-size: 16px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+#newsletter-form button {
+    text-decoration: none;
+    align-content: stretch;
+    width: 131px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 0 4px 4px 0;
+    letter-spacing: 1px;
+} 
+
+@media screen and (max-width: 1024px) {
+
+
+    #newsletter {
+        height: 120px;
+        width: 100%;
+    }
+    
+    #newsletter-content {
+        width: 100%;
+        display: block;
+    }
+
+    #newsletter-span {
+        width: 307px;
+        height: 38px;
+        align-items: center;
+        text-align: center;
+        margin: 10px auto 0 auto;
+        color: #353535;
+        font-weight: bold;
+    }
+
+    #newsletter-form {
+        padding-top: 20px;
+        width: 360px;
+        margin: auto;
+    }
+
+    #newsletter-form input {
+        width: 204px;
+        height: 26px;
+        border: 1px solid #353535;
+        border-radius: 4px;
+        margin-left: 31px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    #newsletter-form button {
+        width: 79px;
+        height: 26px;
+        border-radius: 4px;
+        margin-left: 15px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
