@@ -1,6 +1,6 @@
 ### Loja E-commerce
 
-Layout page criada para processo seletivo da Maeztra e além da resolver as 5 questões de lógica: [**Link**](https://github.com/ArthurDias96/desafio-teste-logico/tree/main "CLIQUE AQUI").
+Layout page criada para processo seletivo da Maeztra.
 
 ## Tecnologias Utilizada
 Para criar Layout foram utilizados as seguintes:
